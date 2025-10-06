@@ -1,18 +1,39 @@
-import pandas as pd
+# ===================================================================
+# Jupyter Notebook & Python Caches
+# ===================================================================
+# Ignore the checkpoints folder that Jupyter creates
+.ipynb_checkpoints/
 
-# Define the path to the data file within the 'data' subfolder
-file_path = 'data/WA_Fn-UseC_-Telco-Customer-Churn.csv'
+# Ignore Python's cache folder
+__pycache__/
 
-try:
-    # Use the correct relative path
-    df = pd.read_csv(file_path)
-    print(f"Dataset loaded successfully from '{file_path}'!")
-except FileNotFoundError:
-    print(f"Error: '{file_path}' not found.")
-    print("Please make sure you have a 'data' folder in your project directory,")
-    print("and the 'WA_Fn-UseC_-Telco-Customer-Churn.csv' file is inside it.")
 
-# Display the first 5 rows if the dataframe was loaded
-if 'df' in locals():
-    print("\nFirst 5 rows of the dataset:")
-    display(df.head())
+# ===================================================================
+# Model Training Artifacts & Logs
+# ===================================================================
+# Ignore CatBoost's training information folders
+catboost_info/
+core.catboost
+
+# Ignore any log files
+*.log
+
+
+# ===================================================================
+# IDE and System Files
+# ===================================================================
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+
+# ===================================================================
+# Python Virtual Environments
+# ===================================================================
+# Common names for virtual environment folders
+venv/
+env/
+.venv/
+.env/
