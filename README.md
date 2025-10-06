@@ -59,11 +59,22 @@ The model successfully identifies **77% of all customers who are at risk of chur
 
 ---
 
-## ⚙️ Getting Started
 
-Follow these steps to run the interactive dashboard on your local machine.
+## ⚙️ Setup & How to Run
 
-### 1. Clone the Repository
+Follow these steps to set up the environment and run the interactive dashboard on your local machine.
+
+### 1. Prerequisites
+
+-   Python 3.8 or higher
+-   [Git](https://git-scm.com/downloads)
+
+### 2. Clone the Repository
+
+First, clone this repository to your local machine using Git:
+
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/s02rayda/telcochurn.git
+cd telcochurn
+
+
